@@ -1,3 +1,4 @@
+
 :root {
   --blue_navy: #131e2a; 
   --golder: 
@@ -34,7 +35,16 @@
   max-width: 1140px;
   /* background-color: red; */
   display: flex;
-  
+  max-height: 100%;
+  width: 100%;
+}
+.Content_Holder1{
+  margin: 0px;
+  max-width: 1140px;
+  /* background-color: red; */
+  display: flex;
+  max-height: 100%;
+  width: 100%;
 }
 
 .Content_Holder ul{
@@ -43,10 +53,16 @@
   padding-right: 10px;
   list-style: none;
 }
+.Content_Holder ul a{
+  text-decoration: none;
+  color: #fff;
+  
+}
 .Content_Holder ul li{
   margin: 30px;
   color: white;
 }
+
 
 .Content_Holder img{
   max-height: 100%;
@@ -55,3 +71,55 @@
 /* End of Header Section */
 
 
+
+
+/* Hero Section */
+
+.Hero_Container{
+  background-image: url('./assets/images/pattern_background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 79vh;
+  max-width: min(100%,var(--width));
+
+  background-color: var(--blue_navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 110px;  */
+  width: 100%;
+}
+
+
+.Hero_Container .Content_Holder1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Hero_Container .Content_Holder1 h1{
+  font-size: 72px;
+  margin-top: 0px;
+
+  text-align: start;
+}
+
+.Hero_Container p{
+  text-align: start;
+}
+
+.Hero_Container .Welcome_Content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.Hero_Container .Welcome_Content button{
+  display: block;
+}
+/* End of Hero Section */
