@@ -1,13 +1,16 @@
 
 :root {
   --blue_navy: #131e2a; 
-  --golder: 
+  --golder: ;
+  --light_blue_navy:#202F3F; 
 }
 
 
 .App {
   text-align: center;
   padding: 0px;
+
+  font-family: 'Poppins',sans-serif;
 }
 
 
@@ -31,21 +34,22 @@
 }
 
 .Content_Holder{
-  margin: 0px;
+  margin: 0 auto;
+  padding: 0 10px;
   max-width: 1140px;
   /* background-color: red; */
   display: flex;
   max-height: 100%;
   width: 100%;
 }
-.Content_Holder1{
+/* .Content_Holder{
   margin: 0px;
   max-width: 1140px;
-  /* background-color: red; */
+  background-color: red; 
   display: flex;
   max-height: 100%;
   width: 100%;
-}
+} */
 
 .Content_Holder ul{
   display: flex;
@@ -91,24 +95,33 @@
   flex-direction: column;
   /* height: 110px;  */
   width: 100%;
+
+  margin: 10px;
 }
 
 
-.Hero_Container .Content_Holder1{
+.Hero_Container .Content_Holder{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-.Hero_Container .Content_Holder1 h1{
+.Hero_Container .Content_Holder h1{
   font-size: 72px;
   margin-top: 0px;
-
+  margin: 0px;
+  padding: 0px;
+  line-height: 70px;
   text-align: start;
+
 }
 
 .Hero_Container p{
   text-align: start;
+  color: #131e2a;
+  font-size: 17px;
+  margin-top: 40px;
 }
 
 .Hero_Container .Welcome_Content{
@@ -116,10 +129,67 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin-right: 20px;
 
 }
 
 .Hero_Container .Welcome_Content button{
-  display: block;
+  width: 140px;
+  font-size: 0.93333333333333rem;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #131e2a;
+  border: none;
+  background-image: linear-gradient(45deg, #7F5523 0%, #FCC676 100%);
+}
+
+.Image_Container{
+  width: 50%;
+}
+
+
+.Bottom_Image{
+  background-color: var(--light_blue_navy);
+  border-radius: 16px;
+  color: white;
+
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+
+}
+
+.Bottom_Image h2{
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.Bottom_Image h3{
+  margin-top: 10px;
+  /* margin-right: 15px; */
+  font-size: 12px;
+  opacity: 70%;
+
+
+}
+
+.Bottom_Image button{
+  background-image: linear-gradient(45deg, #7F5523 0%, #FCC676 100%);
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  padding: 13px 25px;
+  border-radius: 4px;
+  margin-left: 20px;
+
+  /* margin-top: 40px; */
+  
 }
 /* End of Hero Section */
+
+
+
+
+/*  */

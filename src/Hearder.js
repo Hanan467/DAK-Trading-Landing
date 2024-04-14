@@ -7,9 +7,9 @@ function Header(){
             <div className="Content_Holder">
                 <img src={main_logo} alt="" />
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Service</a></li>
+                    <li><a href="www.google.com">Home</a></li>
+                    <li><a href="www.google.com">About</a></li>
+                    <li><a href="www.google.com">Service</a></li>
                 </ul>
             </div>
         </div>
