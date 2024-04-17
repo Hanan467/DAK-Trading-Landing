@@ -1,7 +1,7 @@
 
 :root {
   --blue_navy: #131e2a; 
-  --golder: ;
+  --golder:  ;
   --light_blue_navy:#202F3F; 
 }
 
@@ -189,7 +189,74 @@
 }
 /* End of Hero Section */
 
+/* contact section */
 
+.contact-container{
+  background-color: var(--blue_navy);
+  min-height: 100vh;
+  max-width: min(100%,var(--width));
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
+/* .contact-container .Content_Holder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+} */
 
-/*  */
+h1{
+  color: #212121;
+  font-weight: 400;
+  font-size: 55px;
+}
+.card1-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 10px;
+  margin-left: 150px;
+}
+
+.contact-content{
+  font-weight:800;
+  font-size: 20px;
+}
+.card1-content h3{
+  text-align: start;
+}
+.card1-content p{
+  text-align: start;
+}
+
+/* end of Contact */
+
+/*ContactForm*/
+.contactForm-container{
+  min-height: 90vh;
+  max-width: min(100%,var(--width));
+  background-color: rgb(228, 233, 236);
+  align-items: center;
+}
+.ContactForm-content{
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+.ContactForm-content h2{
+  text-align: start;
+  font-weight: 800;
+  font-size: 40px;
+}
+.ContactForm-content p{
+  text-align: start;
+}
+.contactForm-form{
+  width: 50%;
+  margin-right: 150px;
+  margin-left: 20px;
+
+}
