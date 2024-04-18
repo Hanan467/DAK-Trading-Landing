@@ -24,10 +24,12 @@ export default function Hero() {
             <div className='Content_Holder'>
                 <div className='Welcome_Content'>
                     <h1><span style={WelcomStyleSpan1}>WELCOME TO </span><span style={WelcomStyleSpan2}>DAK TRADING PLC </span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Deleniti repudiandae provident consequatur sapiente culpa 
-                        nemo illo autem ipsum non veniam cupiditate ullam ex soluta quas optio, quidem quis iure obcaecati?
-                    </p>
+                    <div className='text_container'>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Deleniti repudiandae provident consequatur sapiente culpa 
+                            nemo illo autem ipsum non veniam cupiditate ullam ex soluta quas optio, quidem quis iure obcaecati?
+                        </p>
+                    </div>
                     <button>Learn more</button>
                 </div>
                 <div className='Image_Container'>
