@@ -8,6 +8,9 @@ import Cards from './Cards'
 
 import image1 from './assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg'
 
+
+import Contact from './Contact';
+import ContactForm from './ContactForm'
 function App() {
   return (
     <div className="App">
@@ -21,6 +24,8 @@ function App() {
       <About />
 
 
+      <Contact />
+      <ContactForm />
     </div>
   );
 }
