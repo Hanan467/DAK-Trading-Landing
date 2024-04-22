@@ -1,4 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import Cards from './Cards';
+
+// import imageCard1 from './assets/images/sesameseed.jpg'
+
 
 function About(){
     return(
@@ -32,6 +36,14 @@ function About(){
                             consequuntur et aliquam, ut necessitatibus? Reprehenderit!
                         </p>
                     </div>
+                    <div className='container-fluid'>
+
+                    <Cards cardTitle={"The Card Test"} 
+              cardSmallDescription={"a bit of something about the product in talk"} 
+                cardDescription={"writing a half lorem jus tto dipict the long description needed for this component to function properly"}
+                  image={imageCard1}/>
+                    </div>
+
                 </div>
             </div>
         </div>

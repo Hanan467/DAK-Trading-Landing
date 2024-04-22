@@ -341,7 +341,7 @@
 
 .About_Body_Container .Content_Holder{
   display: flex;
-  /* background-color: var(--blue_navy); */
+  background-color: var(--blue_navy);
   box-sizing: border-box;
   height: 350px;
 }
