@@ -439,7 +439,17 @@ h1{
 
 }
 /* End of Contact Form */
-
+@media screen and  (max-width:1000){
+ 
+  .ContactForm-content{
+    width: 100%;
+    margin-left: auto;
+  }
+  .contactForm-form{
+    width: 100%;
+  }
+  
+}
 
 
 /* Services */
