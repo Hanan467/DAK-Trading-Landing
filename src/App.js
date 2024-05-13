@@ -4,7 +4,7 @@ import Hero from './Hero';
 import About from './About'
 import StaionedImage from './StationaryImage'
 import Cards from './Cards'
-
+import Service from './Service';
 
 import image1 from './assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg'
 
@@ -20,8 +20,7 @@ function App() {
       <About />
       <StaionedImage image={image1}/>
       <About />
-      <About />
-      <About />
+      <Service />
 
 
       <Contact />

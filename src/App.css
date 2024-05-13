@@ -309,9 +309,13 @@
 /* Golden Segment */
 
 /* About Section */
-
-.About_Header_Container{
+.About_Container{
+  height: 540px;
   background-color: var(--blue_navy);
+
+}
+.About_Header_Container{
+  height: 30%;
 }
 
 .About_Header_Container .Content_Holder{
@@ -319,8 +323,8 @@
   align-items: center;
   justify-content: center;
   /* background-color: red; */
-  height: 180px;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .About_Header_Container h1{
@@ -339,13 +343,14 @@
 
 .About_Body_Container{
   background-color: var(--blue_navy);
+  height: 65%;
 }
 
 .About_Body_Container .Content_Holder{
   display: flex;
   background-color: var(--blue_navy);
   box-sizing: border-box;
-  height: 350px;
+  height: 100%;
 }
 
 .About_Body_Container .leftContent,.About_Body_Container .rightContent{
@@ -360,14 +365,17 @@
   opacity: 70%;
 }
 /* End of About Section */
-=======
+
+
+/* Contact */
 .contact-container{
   background-color: var(--blue_navy);
-  min-height: 100vh;
+  /* min-height: 100vh;  ==== changed the height to static height */
+  height: 580px;
   max-width: min(100%,var(--width));
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: center; /* changed this to center from space between*/
   flex-direction: column;
 }
 
@@ -404,7 +412,7 @@ h1{
 
 /* end of Contact */
 
-/*ContactForm*/
+/*Contact Form*/
 .contactForm-container{
   min-height: 90vh;
   max-width: min(100%,var(--width));
@@ -430,3 +438,20 @@ h1{
   margin-left: 20px;
 
 }
+/* End of Contact Form */
+
+
+
+/* Services */
+.Service_Container{
+  height: 800px; 
+  /* background-color: red; */
+}
+.export_services{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+
+
+/* End of Services */
