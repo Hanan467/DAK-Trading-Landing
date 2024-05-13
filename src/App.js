@@ -20,9 +20,6 @@ function App() {
       <About />
       <StaionedImage image={image1}/>
       <About />
-      <About />
-      <About />
-
 
       <Contact />
       <ContactForm />
