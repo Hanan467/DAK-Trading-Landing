@@ -1,21 +1,24 @@
 .card_container{
-    height: 350px; 
-    width: 350px; 
+    height: 420px; 
+    width: 380px; 
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
+    border: 2px solid #91682b;
+    border-color: #daad6917;
 }
 
 .card_content{
     position: relative;
     padding: 20px;
-    background-color: #131e2a;
+    background-color: #7F5523;
     color: #ffffff;
     border-top-left-radius: 20px;
     cursor: pointer;
     transform: translateY(47%);
-    /* transition:transform 0.3s;  */
+    transition:transform 0.3s; 
+    text-align: start;
 }
 
 .card_content::before{
@@ -26,5 +29,18 @@
     width: 100px;
     height: 100px;
     display: block; border-radius: 50%;
-    box-shadow: inset -48px -48px #131e2a;
+    box-shadow: inset -48px -48px #7F5523;
+}
+
+.card_content h3{
+    font-size: 24px;
+}
+
+.card_content h5{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card_content:hover{
+    transform: translateY(0);
 }

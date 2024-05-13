@@ -1,4 +1,3 @@
-import Cards from './Cards';
 
 import imageCard1 from './assets/images/sesameseed.jpg'
 
