@@ -5,8 +5,7 @@
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    border: 2px solid #91682b;
-    border-color: #daad6917;
+    box-shadow: 0 4px 8px rgba(219, 136, 34, 0.5); /* Adding box shadow with the specified color */
 }
 
 .card_content{

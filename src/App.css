@@ -45,14 +45,6 @@
   max-height: 100%;
   width: 100%;
 }
-/* .Content_Holder{
-  margin: 0px;
-  max-width: 1140px;
-  background-color: red; 
-  display: flex;
-  max-height: 100%;
-  width: 100%;
-} */
 
 .Content_Holder ul{
   display: flex;
@@ -192,8 +184,12 @@
 
 
 @media screen and (max-width: 1024px) {
-
-
+.Header_Container{
+  width: 100%;
+}
+.Hero_Container{
+    width: 100%;
+  }
 .Hero_Container .Content_Holder{
   box-sizing: border-box;
   display: flex;
@@ -241,6 +237,7 @@
 
 }
 @media  screen and (max-width:460px) {
+
   
   .Content_Holder ul{
     display: flex;
@@ -493,6 +490,13 @@ h1{
 }
 @media screen and  (max-width:1000){
  
+  
+.contactForm-container{
+  min-height: 90vh;
+  background-color: rgb(228, 233, 236);
+  align-items: center;
+  width: 100%;
+}
   .ContactForm-content{
     width: 100%;
     margin-left: auto;
@@ -511,6 +515,9 @@ h1{
     width: 100%;
     margin-left: auto;
   }
+  .ContactForm-content p{
+    font-size: smaller;
+  }
   .contactForm-form{
     width: 100%;
   }
@@ -520,8 +527,23 @@ h1{
 
 /* Services */
 .Service_Container{
-  height: 800px; 
+  height: 1500px; 
   /* background-color: red; */
+}
+.Service_Container .Content_Holder {
+  margin:50px;
+  margin-left: 150px;
+  justify-content: center;
+
+}
+.Content_Holder h1{
+  font-size: 54px;
+  opacity: 90%;                                                        
+  color: #7F5523; 
+  margin-bottom: 40px;
+ 
+
+  /* Change the font style for the the above and bottom */
 }
 .export_services{
   display: flex;
