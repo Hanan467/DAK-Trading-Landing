@@ -39,7 +39,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 20px 20px; 
-  max-width: 1140px;
+  max-width: 1280px;
   /* background-color: red; */
   display: flex;
   max-height: 100%;
@@ -526,30 +526,31 @@ h1{
 
 
 /* Services */
-.Service_Container{
-  height: 1500px; 
-  /* background-color: red; */
-}
-.Service_Container .Content_Holder {
-  margin:50px;
-  margin-left: 150px;
-  justify-content: center;
-
-}
-.Content_Holder h1{
-  font-size: 54px;
-  opacity: 90%;                                                        
-  color: #7F5523; 
-  margin-bottom: 40px;
- 
-
-  /* Change the font style for the the above and bottom */
-}
-.export_services{
-  display: flex;
-  /* flex-direction: column; */
-}
 
 
+@media (max-width: 1190px) {
+  .card-container {
+    width: calc(100% - (10px * 1.5)); 
+  }
+
+  /* .export_services .col-lg-4 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+  } */
+}
+
+@media (max-width: 800px) {
+
+  .export_services .col-lg-4 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px){
+
+}
 
 /* End of Services */

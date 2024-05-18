@@ -43,3 +43,29 @@
 .card_content:hover{
     transform: translateY(0);
 }
+
+
+/* here Instade decrease the size When it reaches max-width of 1190 and let the bootstrap take care of 3 in a row situation*/
+
+@media (max-width: 1190px){
+    .card_container{
+        height: 360px;
+        width: 320px;
+    }
+}
+@media (max-width:990px){
+    .card_container{
+        height: 420px;
+        width: 380px;
+    }
+}
+@media (max-width: 420px) {
+
+    .card_container {
+        height: 380px; 
+        width: 340px;
+    }
+
+    /* Add more css to make it more responsive */
+  
+  }
