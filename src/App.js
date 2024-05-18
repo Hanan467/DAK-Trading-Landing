@@ -19,7 +19,6 @@ function App() {
       <div className='Golder_Segment'></div>
       <About />
       <StaionedImage image={image1}/>
-      <About />
       <Service />
 
 
