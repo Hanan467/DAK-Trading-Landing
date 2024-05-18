@@ -47,20 +47,12 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 20px 20px; 
-  max-width: 1140px;
+  max-width: 1280px;
   /* background-color: red; */
   display: flex;
   max-height: 100%;
   width: 100%;
 }
-/* .Content_Holder{
-  margin: 0px;
-  max-width: 1140px;
-  background-color: red; 
-  display: flex;
-  max-height: 100%;
-  width: 100%;
-} */
 
 .Content_Holder ul{
   display: flex;
@@ -200,8 +192,12 @@
 
 
 @media screen and (max-width: 1024px) {
-
-
+.Header_Container{
+  width: 100%;
+}
+.Hero_Container{
+    width: 100%;
+  }
 .Hero_Container .Content_Holder{
   box-sizing: border-box;
   display: flex;
@@ -249,6 +245,7 @@
 
 }
 @media  screen and (max-width:460px) {
+
   
   .Content_Holder ul{
     display: flex;
@@ -571,6 +568,13 @@ h1{
 }
 @media screen and  (max-width:1000){
  
+  
+.contactForm-container{
+  min-height: 90vh;
+  background-color: rgb(228, 233, 236);
+  align-items: center;
+  width: 100%;
+}
   .ContactForm-content{
     width: 100%;
     margin-left: auto;
@@ -589,6 +593,9 @@ h1{
     width: 100%;
     margin-left: auto;
   }
+  .ContactForm-content p{
+    font-size: smaller;
+  }
   .contactForm-form{
     width: 100%;
   }
@@ -597,15 +604,31 @@ h1{
 
 
 /* Services */
-.Service_Container{
-  height: 800px; 
-  /* background-color: red; */
-}
-.export_services{
-  display: flex;
-  /* flex-direction: column; */
-}
 
 
+@media (max-width: 1190px) {
+  .card-container {
+    width: calc(100% - (10px * 1.5)); 
+  }
+
+  /* .export_services .col-lg-4 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+  } */
+}
+
+@media (max-width: 800px) {
+
+  .export_services .col-lg-4 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px){
+
+}
 
 /* End of Services */
