@@ -59,6 +59,37 @@
         width: 380px;
     }
 }
+
+@media (max-width: 800px) {
+    
+    .card_container{
+        height: 380px;
+        width: 340px;
+    }
+}
+
+@media (max-width: 715px){
+    .card_container{
+        height: 360px;
+        width: 320px;
+    }
+}
+
+@media (max-width: 668px){
+    .card_container{
+        height: 320px;
+        width: 280px;
+    }
+}
+
+
+@media (max-width:580px){
+    .card_container{
+        height: 420px;
+        width: 380px;
+    }
+}
+
 @media (max-width: 420px) {
 
     .card_container {
@@ -67,5 +98,4 @@
     }
 
     /* Add more css to make it more responsive */
-  
   }

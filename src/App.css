@@ -437,7 +437,7 @@
 
 /* End of About Section */
 
-
+/* Location */
 
 .contact-container{
   background-color: var(--blue_navy);
@@ -644,7 +644,14 @@ h1{
   } */
 }
 
-@media (max-width: 800px) {
+@media (max-width:768px){
+  .export_services .col-lg-4{
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: 580px) {
 
   .export_services .col-lg-4 {
     max-width: 100%;
@@ -653,8 +660,6 @@ h1{
     justify-content: center;
   }
 }
-
-
 /* ADD ONE BREAK POINT : DECREASE THE SIZE OF THE CARDS INSTEAD OF JUST CHANGING IT INTO ONE IN A ROW  */
 
 /* End of Services */
