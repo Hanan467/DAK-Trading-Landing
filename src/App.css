@@ -441,7 +441,7 @@
 
 .contact-container{
   background-color: var(--blue_navy);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: start;
   justify-content: center; /* changed this to center from space between*/
@@ -489,7 +489,8 @@ h1{
 }
 .container-row{
   /* margin-left: 200px; */
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin: 40px;
 }
 .card1{
   border-radius: 5px;
@@ -511,10 +512,12 @@ h1{
   border: 0;
 }
 
-
-.contact-container .col-lg-4{
-  width: 380px;
+@media (min-width: 778px){
+  .contact-container .col-lg-4{
+    width: 380px;
+  }
 }
+
 
 .contact-container h2{
   font-size: 2.5rem;
@@ -529,9 +532,9 @@ h1{
 
 @media screen and  (max-width:991px){
   .container-row{
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 20px;
   }
   .card2{
     height: 6rem;
@@ -556,18 +559,24 @@ h1{
    }
 
 }
+/* end of Location */
 
-/* end of Contact */
 
 /*Contact Form*/
 .contactForm-container{
-  min-height: 90vh;
+  min-height: 60vh;
   background-color: rgb(228, 233, 236);
   align-items: center;
 }
+
+.contactForm-container .content_box{
+  justify-content: center;
+}
+
 .ContactForm-content{
-  width: 40%;
-  margin-top: 50px;
+  /* width: 40%; */
+  display: flex;
+  justify-content: center;
 }
 .ContactForm-content h2{
   text-align: start;
@@ -578,16 +587,17 @@ h1{
   text-align: start;
 }
 .contactForm-form{
-  width: 50%;
-  margin-right: 150px;
-  margin-left: 20px;
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 @media screen and  (max-width:1000){
  
   
 .contactForm-container{
-  min-height: 90vh;
+  min-height: 50vh;
   background-color: rgb(228, 233, 236);
   align-items: center;
   width: 100%;
@@ -644,9 +654,6 @@ h1{
   }
 }
 
-@media (max-width: 768px){
-
-}
 
 /* ADD ONE BREAK POINT : DECREASE THE SIZE OF THE CARDS INSTEAD OF JUST CHANGING IT INTO ONE IN A ROW  */
 
