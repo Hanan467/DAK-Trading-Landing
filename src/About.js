@@ -8,10 +8,10 @@ const About = () => {
     <div className="About_Container">
 
       <section className="About_Body_Container">
-        <div className="Content_Holder">
-          <div className="leftContent">
+        <div className="Content_Holder row">
+          <div className="leftContent col-sm-12">
 
-            <header className="About_Header_Container container-fluid">
+            <header className="About_Header_Container container-fluid col-sm-12">
                 <div className="Content_Holder container">
                     <h1>About DAK </h1>
                 </div>

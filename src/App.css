@@ -420,16 +420,26 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .About_Container {
+    background: none;
+    background-color: #f1f1f1;
+  }
   .About_Body_Container {
     flex-direction: column;
   }
-
-  .leftContent, .rightContent {
+  .leftConten {
     flex: none;
     width: 100%;
-    margin: 1rem 0;
+    margin:0;
+    width: 100%;
+  }
+  .left_content_holder{
+    width: 100%;
   }
 
+  .rightContent{
+    display: none;
+  }
   .vertical-line {
     display: none; 
   }
