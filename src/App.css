@@ -163,6 +163,18 @@
   background-image: linear-gradient(45deg, #7F5523 0%, #FCC676 100%);
 }
 
+
+ .Welcome_Content button:hover{
+  font-size: 0.95rem;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.more_services_button button:hover{
+  color: #131e2a; 
+  cursor: pointer;
+}
+
+
 .Image_Container{
   max-width: 50%;
   padding: 0 20px 0 0; 
@@ -410,18 +422,20 @@
   width: auto;
 }
 
-.vertical-line1, .vertical-line3 {
-  width: 2px; 
-  height: 70%;
+
+.vertical-line1, .vertical-line2, .vertical-line3{
+  width: 3px; 
   background-color: var(--golder);
   margin: 0 15px; 
+
+}
+
+.vertical-line1, .vertical-line3 {
+  height: 70%;
 }
 
 .vertical-line2 {
-  width: 2px; 
   height: 90%;
-  background-color: var(--golder);
-  margin: 0 15px; 
 }
 
 
