@@ -21,6 +21,25 @@
   font-family: 'Poppins',sans-serif;
 }
 
+/* Custom styles for navbar */
+.custom-navbar {
+  height: 70px; 
+  padding: 0; 
+}
+
+.custom-navbar .navbar-brand {
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  line-height: 50px; 
+  padding: 0 15px; 
+}
+
+.custom-navbar .navbar-collapse {
+  background-color: #343a40; 
+}
 
 /* Header Section */
 .Header_Container{
@@ -423,24 +442,30 @@
   .About_Container {
     background: none;
     background-color: #f1f1f1;
+    padding: 20px 0;
   }
   .About_Body_Container {
     flex-direction: column;
+    padding: 0; 
   }
-  .leftConten {
+  .Content_Holder {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+  .leftContent {
     flex: none;
     width: 100%;
-    margin:0;
+    padding: 0;
+    margin: 0; 
+  }
+  .left_content_holder {
     width: 100%;
   }
-  .left_content_holder{
-    width: 100%;
-  }
-
-  .rightContent{
+  .rightContent {
     display: none;
   }
-  .vertical-line {
+  .vertical-line1, .vertical-line2, .vertical-line3 {
     display: none; 
   }
 }

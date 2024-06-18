@@ -17,9 +17,12 @@ function ContactForm(){
                         <label htmlFor="exampleFormControlInput1" className="form-label" style={{width:'100%', textAlign:'start'}}>Email address</label>
                         <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
                     </div>
-                    <div class="mb-3">
+                    <div className="mb-3">
                     <label htmlFor="exampleFormControlTextarea1" className="form-label" style={{width:'100%',textAlign:'start'}}>Example textarea</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div className='mb-3'>
+                        <button className='btn btn-primary ' style={{width:'100%', textAlign:'center'}}>Submit</button>
                     </div>
                     </div>
                 </div>
