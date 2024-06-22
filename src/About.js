@@ -1,11 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import imageCard1 from "./assets/images/sesameseed.jpg";
 import aboutImage from "./assets/images/grainVertical.jpg";
 import "./App.css";
 
-const About = () => {
+const About = forwardRef((_, ref) => {
     const { ref: line1Ref, inView: line1InView } = useInView({
         threshold: 0.1,
         triggerOnce: true,
@@ -24,7 +25,7 @@ const About = () => {
     });
 
     return (
-        <div className="About_Container">
+        <div className="About_Container" ref={ref}>
             <section className="About_Body_Container">
                 <div className="Content_Holder row">
                     <div className="leftContent col-sm-12">
@@ -109,6 +110,6 @@ const About = () => {
             </section>
         </div>
     );
-};
+});
 
 export default About;

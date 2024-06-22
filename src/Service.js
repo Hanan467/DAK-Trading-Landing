@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef, useRef } from "react";
 import Cards from "./Cards";
 
-function Service({ title, images }) {
+const Service = forwardRef(({ title, images }, ref) => {
     return (
-        <div class="Service_Container">
+        <div class="Service_Container" ref={ref}>
             <h1>Services</h1>
             <h2>{title}</h2>
             <div class="Content_Holder">
@@ -72,7 +72,7 @@ function Service({ title, images }) {
             </div>
         </div>
     );
-}
+});
 
 export default Service;
 

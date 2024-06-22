@@ -1,4 +1,5 @@
 import "./App.css";
+import { useRef } from "react";
 import Header from "./Hearder";
 import Hero from "./Hero";
 import About from "./About";
@@ -23,18 +24,39 @@ function App() {
         imageCard1,
     ];
 
+    const HeroRef = useRef(null);
+    const AboutRef = useRef(null);
+    const ServiceRef = useRef(null);
+    const ContactRef = useRef(null);
+
+    const scrollToSection = (sectionRef) => {
+        if (sectionRef && sectionRef.current) {
+            sectionRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="App">
-            <Header />
-            <Hero />
+            <Header
+                scrollToSection={scrollToSection}
+                AboutRef={AboutRef}
+                HeroRef={HeroRef}
+                ServiceRef={ServiceRef}
+                ContactRef={ContactRef}
+            />
+            <Hero ref={HeroRef} />
             <div className="Golder_Segment"></div>
-            <About />
+            <About ref={AboutRef} />
             <StaionedImage image={image1} />
-            <Service title={"Exported Items"} images={imagesForService} />
+            <Service
+                title={"Exported Items"}
+                images={imagesForService}
+                ref={ServiceRef}
+            />
             <StaionedImage image={image2} />
             <Service title={"Imported Items"} images={imagesForService} />
 
-            <Contact />
+            <Contact ref={ContactRef} />
             <ContactForm />
         </div>
     );

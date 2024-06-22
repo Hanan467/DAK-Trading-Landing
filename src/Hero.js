@@ -1,4 +1,5 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./App.css";
@@ -9,7 +10,7 @@ import image1 from "./assets/images/tyre2.png";
 import image2 from "./assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.png";
 import image3 from "./assets/images/industrialChemicals1.png";
 
-export default function Hero() {
+const Hero = forwardRef((props, ref) => {
     const images = [image1, image2, image3];
     const WelcomStyleSpan1 = {
         color: "#131E2A",
@@ -40,7 +41,7 @@ export default function Hero() {
     });
 
     return (
-        <div className="Hero_Container">
+        <div className="Hero_Container" ref={ref}>
             <div className="Content_Holder">
                 <div className="Welcome_Content">
                     <motion.h1
@@ -122,4 +123,6 @@ export default function Hero() {
             </div>
         </div>
     );
-}
+});
+
+export default Hero;
