@@ -5,44 +5,49 @@
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0 4px 8px rgba(219, 136, 34, 0.5); /* Adding box shadow with the specified color */
 }
 
 .card_content{
     position: relative;
     padding: 20px;
-    background-color: #7F5523;
     color: #ffffff;
     border-top-left-radius: 20px;
     cursor: pointer;
-    transform: translateY(47%);
+    transform: translateY(57%);
     transition:transform 0.3s; 
     text-align: start;
 }
 
-.card_content::before{
+.card_content::before {
     content: '';
     position: absolute;
     top: -52px;
     right: -48px;
     width: 100px;
     height: 100px;
-    display: block; border-radius: 50%;
-    box-shadow: inset -48px -48px #7F5523;
+    display: block;
+    border-radius: 50%;
+    box-shadow: inset -48px -48px var(--box-shadow-color, #7F5523); /* Fallback color */
 }
 
+
 .card_content h3{
-    font-size: 24px;
+   font-size: 1.7rem; 
 }
 
 .card_content h5{
-    font-size: 16px;
+    font-size: 1.05rem;
     margin-bottom: 15px;
+}
+.card_content p{
+    font-size: 0.85rem;
 }
 
 .card_content:hover{
     transform: translateY(0);
 }
+
+
 
 
 /* here Instade decrease the size When it reaches max-width of 1190 and let the bootstrap take care of 3 in a row situation*/
@@ -80,6 +85,15 @@
         height: 320px;
         width: 280px;
     }
+    /* .card_content h3{
+        font-size: 22px;
+    }
+    .card_content h5{
+        font-size: 17px;
+    }
+    .card_content p{
+        font-size: 13px;
+    } */
 }
 
 

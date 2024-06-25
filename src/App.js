@@ -6,9 +6,19 @@ import About from "./About";
 import StaionedImage from "./StationaryImage";
 import Cards from "./Cards";
 import Service from "./Service";
+import ServiceExport from "./ServiceExport";
 
-import imageCard1 from "./assets/images/grains2.png";
-import imageCard2 from "./assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.png";
+import imageCardImport1 from "./assets/images/Products/sesame-seeds.jpeg";
+import imageCardImport3 from "./assets/images/Products/nigerSeed.jpg";
+import imageCardImport2 from "./assets/images/Products/SoyaBean-transformed.jpeg";
+import imageCardImport4 from "./assets/images/Products/WhiteSpeckledBeans.jpg";
+import imageCardImport5 from "./assets/images/Products/GreenMungBeans.jpeg";
+
+import imageCardExport1 from "./assets/images/Products/tyer.png";
+import imageCardExport3 from "./assets/images/Products/chemicals.png";
+import imageCardExport2 from "./assets/images/Products/truck.png";
+import imageCardExport4 from "./assets/images/Products/clearPlastics.webp";
+import imageCardExport5 from "./assets/images/Products/ceramic.png";
 
 import image1 from "./assets/images/background-for-section.png";
 import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg";
@@ -16,12 +26,19 @@ import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg";
 import Contact from "./Contact";
 import ContactForm from "./ContactForm";
 function App() {
-    const imagesForService = [
-        imageCard1,
-        imageCard1,
-        imageCard1,
-        imageCard1,
-        imageCard1,
+    const imagesForServiceImported = [
+        imageCardImport1,
+        imageCardImport2,
+        imageCardImport3,
+        imageCardImport4,
+        imageCardImport5,
+    ];
+    const imagesForServiceExported = [
+        imageCardExport1,
+        imageCardExport2,
+        imageCardExport3,
+        imageCardExport4,
+        imageCardExport5,
     ];
 
     const HeroRef = useRef(null);
@@ -49,12 +66,15 @@ function App() {
             <About ref={AboutRef} />
             <StaionedImage image={image1} />
             <Service
-                title={"Exported Items"}
-                images={imagesForService}
+                title={"Imported Items"}
+                images={imagesForServiceImported}
                 ref={ServiceRef}
             />
             <StaionedImage image={image2} />
-            <Service title={"Imported Items"} images={imagesForService} />
+            <ServiceExport
+                title={"Exported Items"}
+                images={imagesForServiceExported}
+            />
 
             <Contact ref={ContactRef} />
             <ContactForm />

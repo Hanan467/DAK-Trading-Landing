@@ -29,25 +29,34 @@ function ContactForm() {
                                 className="form-control"
                                 id="exampleFormControlInput1"
                                 placeholder="name@example.com"
+                                // style={{ height: "50px" }}
                             />
                         </div>
                         <div className="mb-3">
                             <label
                                 htmlFor="exampleFormControlTextarea1"
                                 className="form-label"
-                                style={{ width: "100%", textAlign: "start" }}
+                                style={{
+                                    width: "100%",
+                                    textAlign: "start",
+                                }}
                             >
                                 Example textarea
                             </label>
                             <textarea
                                 className="form-control"
                                 id="exampleFormControlTextarea1"
-                                rows="3"
+                                rows="4"
                             ></textarea>
                         </div>
-                    <div className='mb-3'>
-                        <button className='btn btn-primary ' style={{width:'100%', textAlign:'center'}}>Submit</button>
-                    </div>
+                        <div className="mb-3">
+                            <button
+                                className="btn btn-primary submit-form-btn"
+                                style={{ width: "100%", textAlign: "center" }}
+                            >
+                                Submit
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -67,11 +67,12 @@ const Hero = forwardRef((props, ref) => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Deleniti repudiandae provident consequatur
-                            sapiente culpa nemo illo autem ipsum non veniam
-                            cupiditate ullam ex soluta quas optio, quidem quis
-                            iure obcaecati?
+                            DAK Trading PLC is a dynamic import-export company
+                            specializing in the trade of agricultural
+                            commodities and industrial products. With a strong
+                            focus on quality, reliability, and customer
+                            satisfaction, we connect global markets by
+                            facilitating the exchange of goods across borders.
                         </p>
                     </motion.div>
                     <motion.button

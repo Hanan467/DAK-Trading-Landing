@@ -2,7 +2,7 @@ import React, { forwardRef, useRef } from "react";
 import Cards from "./Cards";
 
 const Service = forwardRef(({ title, images }, ref) => {
-    const theme = "theme1";
+    const theme = "theme2";
     return (
         <div class="Service_Container" ref={ref}>
             <h1>Services</h1>
@@ -11,7 +11,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                 <div class="export_services row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Sesame seeds"}
+                            cardTitle={"Tyer"}
                             cardSmallDescription={
                                 "Humera and wellega finest sesame seeds"
                             }
@@ -24,7 +24,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Soya bean"}
+                            cardTitle={"Trucks and Machinery"}
                             cardSmallDescription={
                                 "High protine Soya beans from northern Ethiopia"
                             }
@@ -37,7 +37,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Niger seed"}
+                            cardTitle={"Industrial Chemicals"}
                             cardSmallDescription={
                                 "High oil content and quality Ethiopian Niger seed"
                             }
@@ -50,7 +50,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"White Speckled Bean"}
+                            cardTitle={"Plastics "}
                             cardSmallDescription={
                                 "A unique appearance and high protein content"
                             }
@@ -63,7 +63,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Green Mung Bean"}
+                            cardTitle={"Ceramic"}
                             cardSmallDescription={
                                 "high nutritional value and versatility in cooking"
                             }

@@ -39,6 +39,7 @@ function Header({
                         <Nav.Link
                             href=""
                             onClick={() => scrollToSection(AboutRef)}
+                            content
                         >
                             About
                         </Nav.Link>

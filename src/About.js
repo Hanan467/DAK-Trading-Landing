@@ -2,8 +2,8 @@ import React, { forwardRef } from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import imageCard1 from "./assets/images/sesameseed.jpg";
-import aboutImage from "./assets/images/grainVertical.jpg";
+import imageCard1 from "./assets/images/sesimiSeedhorizontal.png";
+import aboutImage from "./assets/images/aboutTyer.png";
 import "./App.css";
 
 const About = forwardRef((_, ref) => {
@@ -35,36 +35,49 @@ const About = forwardRef((_, ref) => {
                             </div>
                         </header>
                         <div className="left_content_holder">
-                            <div className="left_content_paragraph">
+                            <div className="left_content_paragraph top_content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quos, recusandae. Ex,
-                                    molestiae qui. Eius, voluptates debitis
-                                    atque totam optio modi fuga et inventore vel
-                                    obcaecati veniam ipsam quaerat velit
-                                    accusantium. Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Magni nihil
-                                    asperiores minus harum, quos expedita
-                                    nesciunt tempora. Quam voluptas maiores quas
-                                    minima fugit at consequuntur et aliquam, ut
-                                    necess itatibus? Reprehenderit!
+                                    DAK Trading PLC is a leading Ethiopian
+                                    import-export company dedicated to
+                                    facilitating seamless global trade. We
+                                    empower Ethiopian businesses by connecting
+                                    their high-quality exports, like sesame
+                                    seeds, soya beans, and various pulses, with
+                                    international markets. Additionally, we
+                                    serve Ethiopian industries by importing
+                                    essential products such as tires, ceramics,
+                                    trucks and industrial machinery, industrial
+                                    chemicals, and plastics.
                                 </p>
                             </div>
-                            <div className="left_content_paragraph_image_holder">
-                                <img src={imageCard1} alt="Sesame Seed" />
-                            </div>
-                            <div className="left_content_paragraph">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quos, recusandae. Ex,
-                                    molestiae qui. Eius, voluptates debitis
-                                    atque totam optio modi fuga et inventore vel
-                                    obcaecati veniam ipsam quaerat velit.
-                                </p>
+                            <div className="bottom_content">
+                                <div className="left_content_paragraph_image_holder">
+                                    <img src={imageCard1} alt="Sesame Seed" />
+                                </div>
+                                <div className="left_content_paragraph">
+                                    <ul>
+                                        <li>
+                                            To promote Ethiopian exports by
+                                            creating reliable market access for
+                                            local producers.
+                                        </li>
+                                        <li>
+                                            To ensure a consistent supply of
+                                            essential goods for Ethiopian
+                                            industries and consumers.
+                                        </li>
+                                        <li>
+                                            {" "}
+                                            To foster international trade
+                                            partnerships that benefit Ethiopia's
+                                            economic growth.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <motion.div
+                    {/* <motion.div
                         className="vertical-line1"
                         ref={line1Ref}
                         initial={{ opacity: 0, x: 100 }}
@@ -93,7 +106,7 @@ const About = forwardRef((_, ref) => {
                             x: line3InView ? 0 : 100,
                         }}
                         transition={{ duration: 0.5, delay: 0.8 }}
-                    ></motion.div>
+                    ></motion.div> */}
                     <motion.div
                         className="rightContent"
                         ref={imageRef}
