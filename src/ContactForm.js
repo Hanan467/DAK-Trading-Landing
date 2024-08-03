@@ -8,11 +8,10 @@ function ContactForm() {
                     <div className="col-lg-6 col-md-12 col-sm-12 ContactForm-content d-flex flex-column">
                         <h2>Contact US</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Deleniti repudiandae provident consequatur
-                            sapiente culpa nemo illo autem ipsum non veniam
-                            cupiditate ullam ex soluta quas optio, quidem quis
-                            iure obcaecati?
+                            For any inquiries or assistance, please reach out to
+                            DAK Trading PLC. Our dedicated team is here to
+                            support you with all your trading needs. Contact us
+                            today and experience our commitment to excellence.
                         </p>
                     </div>
                     <div className="contactForm-form col-lg-6 col-md-12 col-sm-12">
@@ -41,7 +40,7 @@ function ContactForm() {
                                     textAlign: "start",
                                 }}
                             >
-                                Example textarea
+                                Leave your comment
                             </label>
                             <textarea
                                 className="form-control"
