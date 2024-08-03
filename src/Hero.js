@@ -10,14 +10,8 @@ import image1 from "./assets/images/tyre2.png";
 import image2 from "./assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.png";
 import image3 from "./assets/images/industrialChemicals1.png";
 
-const Hero = forwardRef((props, ref) => {
+const Hero = forwardRef(({ scrollToSection, AboutRef, ServiceRef }, ref) => {
     const images = [image1, image2, image3];
-    const WelcomStyleSpan1 = {
-        color: "#131E2A",
-    };
-    const WelcomStyleSpan2 = {
-        color: "#7f5523",
-    };
 
     const { ref: welcomeRef, inView: welcomeInView } = useInView({
         threshold: 0.1,
@@ -53,8 +47,10 @@ const Hero = forwardRef((props, ref) => {
                         }}
                         transition={{ duration: 0.5 }}
                     >
-                        <span style={WelcomStyleSpan1}>WELCOME TO </span>
-                        <span style={WelcomStyleSpan2}>DAK TRADING PLC </span>
+                        <span className="WelcomStyleSpan1">WELCOME TO </span>
+                        <span className="WelcomStyleSpan2">
+                            DAK TRADING PLC
+                        </span>
                     </motion.h1>
                     <motion.div
                         className="text_container"
@@ -75,17 +71,13 @@ const Hero = forwardRef((props, ref) => {
                             facilitating the exchange of goods across borders.
                         </p>
                     </motion.div>
-                    <motion.button
-                        ref={buttonRef}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{
-                            opacity: buttonInView ? 1 : 0,
-                            scale: buttonInView ? 1 : 0.8,
+                    <button
+                        onClick={() => {
+                            scrollToSection(AboutRef);
                         }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         Learn more
-                    </motion.button>
+                    </button>
                 </div>
                 <div className="Image_Container">
                     <motion.div
@@ -110,14 +102,21 @@ const Hero = forwardRef((props, ref) => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <div>
-                            <h2>SOMETHING ABOUT DAK</h2>
+                            <h2>Variours Products of DAK</h2>
                             <h3>
-                                Will talk about something about dak trading and
-                                some more adding more more and more
+                                DAK Trading Plc offers a wide range of import
+                                and export products, including oily seeds and
+                                imported machinery.
                             </h3>
                         </div>
                         <div className="more_services_button ">
-                            <button>More</button>
+                            <button
+                                onClick={() => {
+                                    scrollToSection(ServiceRef);
+                                }}
+                            >
+                                More
+                            </button>
                         </div>
                     </motion.div>
                 </div>

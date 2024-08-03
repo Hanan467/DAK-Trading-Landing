@@ -5,8 +5,13 @@ const Service = forwardRef(({ title, images }, ref) => {
     const theme = "theme2";
     return (
         <div class="Service_Container" ref={ref}>
-            <h1>Services</h1>
-            <h2>{title}</h2>
+            <div className="About-Header-Text">
+                {/* <h1>Services</h1> */}
+
+                <span className="Service-Title">
+                    <h2>{title}</h2>
+                </span>
+            </div>
             <div class="Content_Holder">
                 <div class="export_services row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -42,7 +47,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                                 "High oil content and quality Ethiopian Niger seed"
                             }
                             cardDescription={
-                                "Ethiopian Niger seed is prized for its high oil content and quality, commonly used for edible oil production. It supports local agriculture and is an important export commodity."
+                                "Ethiopian Niger seed is prized for its high oil content and quality, commonly used for edible oil production. It supports local agriculture and is an important export commodity. The finest in Ethiopia"
                             }
                             image={images[2]}
                             theme={theme}
@@ -68,7 +73,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                                 "high nutritional value and versatility in cooking"
                             }
                             cardDescription={
-                                "Ethiopian Green Mung Beans are known for their high nutritional value and versatility in cooking, playing a significant role in local diets and contributing to the countrys agricultural exports"
+                                "Ethiopian Green Mung Beans are known for their high nutritional value and versatility in cooking, playing a significant role in local diets and contributing to the countrys agricultural exports the best quility in Ethiopia "
                             }
                             image={images[4]}
                             theme={theme}

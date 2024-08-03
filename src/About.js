@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import imageCard1 from "./assets/images/sesimiSeedhorizontal.png";
+import imageCard1 from "./assets/images/AboutSeeme-Photoroom.png";
 import aboutImage from "./assets/images/aboutTyer.png";
 import "./App.css";
 
@@ -31,7 +31,12 @@ const About = forwardRef((_, ref) => {
                     <div className="leftContent col-sm-12">
                         <header className="About_Header_Container container-fluid col-sm-12">
                             <div className="Content_Holder container">
-                                <h1>About DAK</h1>
+                                <div className="About-Header-Text">
+                                    <h1>
+                                        About
+                                        <span className="makeGold"> US</span>
+                                    </h1>
+                                </div>
                             </div>
                         </header>
                         <div className="left_content_holder">
@@ -74,6 +79,21 @@ const About = forwardRef((_, ref) => {
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div className="left_content_paragraph top_content">
+                                <p>
+                                    DAK Trading PLC is a leading Ethiopian
+                                    import-export company dedicated to
+                                    facilitating seamless global trade. We
+                                    empower Ethiopian businesses by connecting
+                                    their high-quality exports, like sesame
+                                    seeds, soya beans, and various pulses, with
+                                    international markets. Additionally, we
+                                    serve Ethiopian industries by importing
+                                    essential products such as tires, ceramics,
+                                    trucks and industrial machinery, industrial
+                                    chemicals, and plastics.
+                                </p>
                             </div>
                         </div>
                     </div>

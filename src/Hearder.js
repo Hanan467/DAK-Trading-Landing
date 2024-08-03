@@ -12,7 +12,7 @@ function Header({
         <Navbar
             collapseOnSelect
             expand="lg"
-            bg="dark"
+            // bg="dark"
             variant="dark"
             className="custom-navbar"
         >
@@ -20,19 +20,20 @@ function Header({
                 <Navbar.Brand href="#">
                     <img
                         src={main_logo}
-                        height="80"
-                        width="80"
+                        height="110"
+                        width="110"
                         className="d-inline-block align-top"
                         alt="Main Logo"
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto">
+                    <Nav className="ml-auto" style={{ fontSize: "1.2rem" }}>
                         <Nav.Link
                             onClick={() => {
                                 scrollToSection(HeroRef);
                             }}
+                            className="nav-link Header_Link_Color"
                         >
                             Home
                         </Nav.Link>
@@ -40,6 +41,7 @@ function Header({
                             href=""
                             onClick={() => scrollToSection(AboutRef)}
                             content
+                            className="Header_Link_Color"
                         >
                             About
                         </Nav.Link>
@@ -47,6 +49,7 @@ function Header({
                             onClick={() => {
                                 scrollToSection(ServiceRef);
                             }}
+                            className="Header_Link_Color"
                         >
                             Service
                         </Nav.Link>
@@ -54,6 +57,7 @@ function Header({
                             onClick={() => {
                                 scrollToSection(ContactRef);
                             }}
+                            className="Header_Link_Color"
                         >
                             Contact
                         </Nav.Link>

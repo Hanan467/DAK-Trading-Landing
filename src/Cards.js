@@ -9,7 +9,7 @@ function Cards({
 }) {
     const Theme1 = {
         BackgroundColor: {
-            backgroundColor: "#7F5523",
+            backgroundColor: "#be924e",
         },
         shadoTouse: "0 4px 8px rgba(219, 136, 34, 0.5)",
     };

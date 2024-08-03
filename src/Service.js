@@ -5,8 +5,13 @@ const Service = forwardRef(({ title, images }, ref) => {
     const theme = "theme1";
     return (
         <div class="Service_Container" ref={ref}>
-            <h1>Services</h1>
-            <h2>{title}</h2>
+            <div className="About-Header-Text">
+                {/* <h1>Services</h1> */}
+
+                <span className="Service-Title">
+                    <h2>{title}</h2>
+                </span>
+            </div>
             <div class="Content_Holder">
                 <div class="export_services row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -42,9 +47,22 @@ const Service = forwardRef(({ title, images }, ref) => {
                                 "High oil content and quality Ethiopian Niger seed"
                             }
                             cardDescription={
-                                "Ethiopian Niger seed is prized for its high oil content and quality, commonly used for edible oil production. It supports local agriculture and is an important export commodity."
+                                "Ethiopian Niger seed is prized for its high oil content and quality, commonly used for edible oil production. It supports local agriculture and is an important export commodity. The finest in Ethiope and Africa"
                             }
                             image={images[2]}
+                            theme={theme}
+                        />
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <Cards
+                            cardTitle={"White Speckled Bean"}
+                            cardSmallDescription={
+                                "A unique appearance and high protein content"
+                            }
+                            cardDescription={
+                                "Ethiopian White Speckled Beans are valued for their rich protein content and unique appearance, contributing to local diets and serving as an important export crop for the country's agriculture."
+                            }
+                            image={images[3]}
                             theme={theme}
                         />
                     </div>
@@ -68,7 +86,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                                 "high nutritional value and versatility in cooking"
                             }
                             cardDescription={
-                                "Ethiopian Green Mung Beans are known for their high nutritional value and versatility in cooking, playing a significant role in local diets and contributing to the countrys agricultural exports"
+                                "Ethiopian Green Mung Beans are known for their high nutritional value and versatility in cooking, playing a significant role in local diets and contributing to the countrys agricultural exports. The finest in Ethiopia and beyond Africa"
                             }
                             image={images[4]}
                             theme={theme}
