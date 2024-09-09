@@ -32,7 +32,10 @@ const About = forwardRef((_, ref) => {
                         <header className="About_Header_Container container-fluid col-sm-12">
                             <div className="Content_Holder container">
                                 <div className="About-Header-Text">
-                                    <h1>About US</h1>
+                                    <h1>
+                                        About
+                                        <span className="makeGold">US</span>
+                                    </h1>
                                 </div>
                             </div>
                         </header>

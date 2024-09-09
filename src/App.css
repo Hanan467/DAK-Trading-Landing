@@ -903,3 +903,9 @@ h1{
 .Service-Title-Item-Span{
   color: #131e2a;
 }
+
+@media (max-width: 420px) {
+  .remove-top-margin{
+    margin-top: 0px !important;
+  }
+}

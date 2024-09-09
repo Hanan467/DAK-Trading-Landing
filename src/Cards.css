@@ -112,6 +112,9 @@
         width: 340px;
     }
 
+    .contactForm-container .content_box{
+        padding: 20px 0px;
+    }
     /* Add more css to make it more responsive */
   }
 

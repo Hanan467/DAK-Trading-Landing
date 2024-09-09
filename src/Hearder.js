@@ -18,13 +18,14 @@ function Header({
             style={{ padding: "0px" }}
         >
             <Container style={{ paddingTop: "0px", paddingBottom: "0px" }}>
-                <Navbar.Brand href="#">
+                <Navbar.Brand href="#" style={{ padding: "0px" }}>
                     <img
                         src={main_logo}
                         height="110"
                         width="110"
                         className="d-inline-block align-top"
                         alt="Main Logo"
+                        style={{ padding: "0px", margin: "0px" }}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

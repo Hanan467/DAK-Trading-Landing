@@ -6,7 +6,9 @@ function ContactForm() {
             <div className="Content_Holder">
                 <div class="row content_box">
                     <div className="col-lg-6 col-md-12 col-sm-12 ContactForm-content d-flex flex-column">
-                        <h2>Contact US</h2>
+                        <h2>
+                            Contact <span className="makeGold">US</span>
+                        </h2>
                         <p>
                             For any inquiries or assistance, please reach out to
                             DAK Trading PLC. Our dedicated team is here to
@@ -15,7 +17,7 @@ function ContactForm() {
                         </p>
                     </div>
                     <div className="contactForm-form col-lg-6 col-md-12 col-sm-12">
-                        <div class="mb-3 mt-5">
+                        <div class="mb-3 mt-5 remove-top-margin">
                             <label
                                 htmlFor="exampleFormControlInput1"
                                 className="form-label"
