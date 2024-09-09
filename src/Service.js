@@ -102,16 +102,3 @@ const Service = forwardRef(({ title, images }, ref) => {
 });
 
 export default Service;
-
-{
-    /* <div className="container-fluid">
-    <Cards
-        cardTitle={"The Card Test"}
-        cardSmallDescription={"a bit of something about the product in talk"}
-        cardDescription={
-            "writing a half lorem jus tto dipict the long description needed for this component to function properly"
-        }
-        image={images[1]}
-    />
-</div>; */
-}

@@ -91,3 +91,7 @@ function App() {
 }
 
 export default App;
+
+//Todo: Clean up and orgnize the code
+//Todo: Compress the images using webp
+// Todo: Try to reduce the size of the project
