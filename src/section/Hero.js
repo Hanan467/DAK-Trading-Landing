@@ -1,14 +1,12 @@
 import React, { forwardRef } from "react";
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import "./App.css";
-import Slider from "./Slider";
-import Header from "./Hearder";
+import "../style/App.css";
+import Slider from "../components/Slider";
 
-import image1 from "./assets/images/tyre2.png";
-import image2 from "./assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.png";
-import image3 from "./assets/images/industrialChemicals1.png";
+import image1 from "../assets/images/tyre2.png";
+import image2 from "../assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.png";
+import image3 from "../assets/images/industrialChemicals1.png";
 
 const Hero = forwardRef(({ scrollToSection, AboutRef, ServiceRef }, ref) => {
     const images = [image1, image2, image3];

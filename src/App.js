@@ -1,14 +1,11 @@
-import "./App.css";
+import "./style/App.css";
 import { useRef } from "react";
-import Header from "./Hearder";
-import Hero from "./Hero";
-import About from "./About";
-import StaionedImage from "./StationaryImage";
-import Cards from "./Cards";
-import Service from "./Service";
-import ServiceExport from "./ServiceExport";
-import DetailPage from "./DetailPage";
-import ContactUs from "./ContactUs";
+import Header from "./components/Hearder";
+import Hero from "./section/Hero";
+import About from "./section/About";
+import StaionedImage from "./components/StationaryImage";
+import Service from "./section/Service";
+import ServiceExport from "./section/ServiceExport";
 
 import imageCardImport1 from "./assets/images/Products/sesame-seeds.jpeg";
 import imageCardImport3 from "./assets/images/Products/nigerSeed.png";
@@ -25,8 +22,8 @@ import imageCardExport5 from "./assets/images/Products/ceramic.png";
 import image1 from "./assets/images/background-for-section.png";
 import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg";
 
-import Contact from "./Contact";
-import ContactForm from "./ContactForm";
+import Contact from "./section/Contact";
+import ContactForm from "./section/ContactForm";
 function App() {
     const imagesForServiceImported = [
         imageCardImport1,
@@ -85,7 +82,6 @@ function App() {
 
             <Contact ref={ContactRef} />
             <ContactForm />
-            {/* <ContactUs /> */}
         </div>
     );
 }

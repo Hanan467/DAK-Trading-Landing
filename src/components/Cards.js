@@ -1,4 +1,4 @@
-import "./Cards.css";
+import "../style/Cards.css";
 
 function Cards({
     cardTitle,

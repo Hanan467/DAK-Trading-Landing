@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'BroshK';
-  src: url('./assets//fonts/BroshK.ttf') format('truetype');
+  src: url('../assets//fonts/BroshK.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -137,7 +137,7 @@
 /* Hero Section */
 
 .Hero_Container{
-  background-image: url('./assets/images/pattern_background.jpg');
+  background-image: url('../assets/images/pattern_background.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

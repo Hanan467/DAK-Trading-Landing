@@ -1,10 +1,9 @@
 import React, { forwardRef } from "react";
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import imageCard1 from "./assets/images/AboutSeeme-Photoroom.png";
-import aboutImage from "./assets/images/aboutTyer.png";
-import "./App.css";
+import imageCard1 from "../assets/images/AboutSeeme-Photoroom.png";
+import aboutImage from "../assets/images/aboutTyer.png";
+import "../style/App.css";
 
 const About = forwardRef((_, ref) => {
     const { ref: line1Ref, inView: line1InView } = useInView({

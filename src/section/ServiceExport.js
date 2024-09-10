@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import Cards from "./Cards";
+import Cards from "../components/Cards";
 
 const Service = forwardRef(({ title, images }, ref) => {
     const theme = "theme2";
