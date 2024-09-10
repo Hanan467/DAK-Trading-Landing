@@ -826,7 +826,7 @@ h1{
 }
 
 .Service-Title{
-  color: #7F5523;
+  color: var(--primary-color);
 }
 .Service-Title h2{
   font-size: 3rem;
@@ -900,12 +900,29 @@ h1{
   color: var(--blue_navy);
 }
 
-.Service-Title-Item-Span{
-  color: #131e2a;
-}
-
 @media (max-width: 420px) {
   .remove-top-margin{
     margin-top: 0px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 420px) {
+  .card2 {
+    margin: 0px 0px 10px 0px !important;
+    padding: 0px;
+    height: 5rem !important;
+    width: 100%;
+    display: flex;
+  }
+  .card2 .mt-5{
+    margin: 0px !important;
+  }
+
+  .left_content_paragraph_image_holder img {
+    width: 280px !important;
   }
 }

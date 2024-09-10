@@ -34,7 +34,7 @@ const About = forwardRef((_, ref) => {
                                 <div className="About-Header-Text">
                                     <h1>
                                         About
-                                        <span className="makeGold">US</span>
+                                        <span className="makeGold"> US</span>
                                     </h1>
                                 </div>
                             </div>

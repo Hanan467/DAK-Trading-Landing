@@ -1,4 +1,4 @@
-import React, { forwardRef, useRef } from "react";
+import React, { forwardRef } from "react";
 import Cards from "./Cards";
 
 const Service = forwardRef(({ title, images }, ref) => {
@@ -11,7 +11,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                 <span className="Service-Title">
                     <h2>
                         {title}
-                        <span className="Service-Title-Item-Span">Items</span>
+                        <span className="makeGold">Items</span>
                     </h2>
                 </span>
             </div>
