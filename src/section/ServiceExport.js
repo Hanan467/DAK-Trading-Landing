@@ -9,9 +9,9 @@ const Service = forwardRef(({ title, images }, ref) => {
                 {/* <h1>Services</h1> */}
 
                 <span className="Service-Title">
-                    <h2>
+                    <h2 style={{ fontWeight: "bold" }}>
                         {title}
-                        <span className="makeGold">Items</span>
+                        <span className=" makeBlue">Items</span>
                     </h2>
                 </span>
             </div>
@@ -45,7 +45,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Industrial Chemicals"}
+                            cardTitle={"Rebars"}
                             cardSmallDescription={
                                 " Formulated to meet the highest standards of quality and efficiency."
                             }

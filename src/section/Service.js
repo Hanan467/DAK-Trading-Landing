@@ -9,14 +9,27 @@ const Service = forwardRef(({ title, images }, ref) => {
                 {/* <h1>Services</h1> */}
 
                 <span className="Service-Title">
-                    <h2>
+                    <h2 style={{ fontWeight: "bold" }}>
                         {title}
-                        <span className="makeGold">Items</span>
+                        <span className="makeBlue">Items</span>
                     </h2>
                 </span>
             </div>
             <div class="Content_Holder">
                 <div class="export_services row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <Cards
+                            cardTitle={"Coffee Beans"}
+                            cardSmallDescription={
+                                "Humera and wellega finest sesame seeds"
+                            }
+                            cardDescription={
+                                "Humera and Wellega are renowned varieties of Ethiopian sesame seeds, valued for their high oil content and rich flavor. Humera is known for its whitish color, while Wellega is darker and aromatic."
+                            }
+                            image={images[5]}
+                            theme={theme}
+                        />
+                    </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
                             cardTitle={"Sesame seeds"}

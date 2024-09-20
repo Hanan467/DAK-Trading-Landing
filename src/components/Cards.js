@@ -9,14 +9,14 @@ function Cards({
 }) {
     const Theme1 = {
         BackgroundColor: {
-            backgroundColor: "#be924e",
+            backgroundColor: "rgba(190, 146, 78, 0.95)",
         },
         shadoTouse: "0 4px 8px rgba(219, 136, 34, 0.5)",
     };
 
     const Theme2 = {
         BackgroundColor: {
-            backgroundColor: "#131e2a",
+            backgroundColor: "rgba(19, 30, 42, 0.95)",
         },
         shadoTouse: "0 4px 8px rgba(19, 30, 42, 0.5)",
     };

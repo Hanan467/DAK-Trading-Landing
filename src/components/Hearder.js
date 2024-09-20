@@ -1,5 +1,6 @@
 import main_logo from "../assets/images/D_4__1_-removebg-preview.png";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import "../style/App.css";
 
 function Header({
     scrollToSection,

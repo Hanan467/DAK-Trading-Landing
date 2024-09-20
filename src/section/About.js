@@ -55,7 +55,11 @@ const About = forwardRef((_, ref) => {
                             </div>
                             <div className="bottom_content">
                                 <div className="left_content_paragraph_image_holder">
-                                    <img src={imageCard1} alt="Sesame Seed" />
+                                    <img
+                                        loading="lazy"
+                                        src={imageCard1}
+                                        alt="Sesame Seed"
+                                    />
                                 </div>
                                 <div className="left_content_paragraph">
                                     <ul>
@@ -139,7 +143,11 @@ const About = forwardRef((_, ref) => {
                         }}
                         transition={{ duration: 0.5, delay: 1.2 }}
                     >
-                        <img src={aboutImage} alt="About DAK Trading PLC" />
+                        <img
+                            loading="lazy"
+                            src={aboutImage}
+                            alt="About DAK Trading PLC"
+                        />
                     </motion.div>
                 </div>
             </section>
